@@ -1,5 +1,8 @@
 <?php
-function mamcut_users_role_select_options(){
+/*****
+*. Function to return the the HTML dropdown of User Roles
+******/
+function WPUserRolesDropdown(){
 	$users = get_users();
 	$users_role = array();
 	foreach($users as $user)
